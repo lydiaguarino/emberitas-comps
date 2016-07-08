@@ -21,24 +21,22 @@
 <!-- This is where all of our template code will go -->
 <body>
   <div class="container">
-    <a href='new.html' class="nav-button"><button class="btn btn-primary">Add a Color</button></a>
+    <a href='index.html' class="nav-button"><button class="btn btn-primary">Back to Colors</button></a>
     <div class="row">
-      <div class="col-md-12">
-        <h1>Colors</h1>
+      <div class="col-md-6 col-md-offset-3">
+        <h1>Edit a Color</h1>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6 col-sm-8 col-md-offset-3 col-sm-offset-2 color-collection">
-        <a href='edit.html'><div class="color-preview" id="red"></div></a>
-        <a href='edit.html'><div class="color-preview" id="orange"></div></a>
-        <a href='edit.html'><div class="color-preview" id="yellow"></div></a>
-        <a href='edit.html'><div class="color-preview" id="lime"></div></a>
-        <a href='edit.html'><div class="color-preview" id="green"></div></a>
-        <a href='edit.html'><div class="color-preview" id="blue"></div></a>
-        <a href='edit.html'><div class="color-preview" id="indigo"></div></a>
-        <a href='edit.html'><div class="color-preview" id="purple"></div></a>
-        <a href='edit.html'><div class="color-preview" id="black"></div></a>
-        <a href='edit.html'><div class="color-preview" id="white"></div></a>
+      <div class="col-md-4 col-sm-6 col-xs-8 col-md-offset-4 col-sm-offset-3 col-xs-offset-2">
+        <div class="color-preview color-preview-lg"></div>
+        <form>
+          <input maxlenght="3" type="range" step=1 min=0 max=255 name="red-input" id="red-input"/>
+          <input maxlenght="3" type="range" step=1 min=0 max=255 name="green-input" id="green-input"/>
+          <input type="range" step=1 min=0 max=255 name="blue-input" id="blue-input"/>
+          <button class="btn btn-danger form-button">Delete Color</button>
+          <button class="btn btn-primary form-button">Save Color</button>
+        </form>
       </div>
     </div>
   </div>

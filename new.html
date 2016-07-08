@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- This is where we configure a bunch of important parts of our webpage -->
+  <meta charset="utf-8">
+  <!-- This helps us with responsive display -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- This is what will show up in the browser tab header -->
+  <title>Emberitas Comps</title>
+  <!-- This is what will show up in search results -->
+  <meta name="description" content="Emberitas Comps">
+  <!-- You should replace this with your own name. You are the author. -->
+  <meta name="author" content="Lydia Guarino">
+  <!-- We will import twitter bootstrap to give us a leg up on styling -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- This links our stylesheet so we can add custom css -->
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+</head>
+
+<!-- This is where all of our template code will go -->
+<body>
+  <div class="container">
+    <a href='index.html' class="nav-button"><button class="btn btn-primary">Back to Colors</button></a>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h1>Add a Color</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 col-xs-8 col-md-offset-4 col-sm-offset-3 col-xs-offset-2">
+        <div class="color-preview color-preview-lg"></div>
+        <form>
+          <input maxlenght="3" type="range" step=1 min=0 max=255 name="red-input" id="red-input"/>
+          <input maxlenght="3" type="range" step=1 min=0 max=255 name="green-input" id="green-input"/>
+          <input type="range" step=1 min=0 max=255 name="blue-input" id="blue-input"/>
+          <button class="btn btn-primary form-button">Save Color</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
