@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- This is where we configure a bunch of important parts of our webpage -->
+  <meta charset="utf-8">
+  <!-- This helps us with responsive display -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- This is what will show up in the browser tab header -->
+  <title>Emberitas Comps</title>
+  <!-- This is what will show up in search results -->
+  <meta name="description" content="Emberitas Comps">
+  <!-- You should replace this with your own name. You are the author. -->
+  <meta name="author" content="Lydia Guarino">
+  <!-- We will import twitter bootstrap to give us a leg up on styling -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- This links our stylesheet so we can add custom css -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- This adds the fancy font we use for headings -->
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+</head>
+
+<!-- This is where all of our template code will go -->
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-8 col-md-offset-3 col-sm-offset-2">
+        <h1>Tropical</h1>
+        <form>
+          <h2>Palette Name</h2>
+          <input class="palette-name-input form-control" type="text" placeholder="New Palette">
+
+          <h2>Palette Preview</h2>
+          <div class="btn-group color-palette">
+            <button class="btn" type="button" style="background-color:rgb(217,33,32)" >217,33,32</button>
+            <button class="btn" type="button" style="background-color:rgb(231,116,47)">231,116,47</button>
+            <button class="btn" type="button" style="background-color:rgb(223,165,58)">223,165,58</button>
+            <button class="btn" type="button" style="background-color:rgb(177,190,78)">177,190,78</button>
+            <button class="btn" type="button" style="background-color:rgb(109,179,136)">109,179,136</button>
+          </div>
+
+          <h2>Edit Color</h2>
+          <div class="btn-group">
+            <div class="btn preview-tile" style="background-color:rgb(217,33,32)"></div>
+          </div>
+          <div class="color-input-group">
+            <span class="color-input-label">R</span>
+            <input class="color-text-input form-control" maxlength="3" type="text">
+            <input class="color-range-input pull-right" type="range" step=1 min=0 max=255>
+          </div>
+          <div class="color-input-group">
+            <span class="color-input-label">G</span>
+            <input class="color-text-input form-control" maxlength="3" type="text">
+            <input class="color-range-input pull-right" type="range" step=1 min=0 max=255>
+          </div>
+          <div class="color-input-group">
+            <span class="color-input-label">B</span>
+            <input class="color-text-input form-control" maxlength="3" type="text">
+            <input class="color-range-input pull-right" type="range" step=1 min=0 max=255>
+          </div>
+
+          <div class="btn-group form-actions" role="group">
+            <a class="btn" href="palettes.html">Cancel</a>
+            <a class="btn" href="palettes.html">Delete</a>
+            <input class="btn" type="submit" value="Save">
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="app.js"></script>
+</html>
